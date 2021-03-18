@@ -1,0 +1,93 @@
+.page-body{
+    width: 70vw;
+    margin: auto;
+}
+.date{
+    margin: 0 0 0 0;
+}
+h2{
+    margin: 0 0 10px 0;
+}
+div p{
+    margin: 5px 0 0 0;
+    font-size: small;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px grey solid;
+}
+.menu-button{
+    margin: 0 15px 0 0;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: url(../media/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.articles{
+    flex-grow: 1;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px 30px 30px;
+}
+.articles :last-child::after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+.photo{
+    max-height: 70%;
+    max-width: 90%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 5%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.column1{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.column2{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.column3{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+footer{
+    width: 98vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: dimgray;
+    color: antiquewhite;
+}
